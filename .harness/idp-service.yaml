@@ -50,3 +50,4 @@ metadata:
     prod_version: '1.23'
   tags:
   - java
+  - rest
