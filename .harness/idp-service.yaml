@@ -1,0 +1,52 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: idp-service
+name: idp-service
+owner: group:idmbackend
+spec:
+  lifecycle: production
+  providesApi:
+  - api:idp-service
+  providesApis:
+  - idp-service
+  dependsOn:
+  - component:ng-manager
+  dependencyOf:
+  - component:idp-admin
+metadata:
+  description: IDP backend service
+  annotations:
+    harness.io/projects-stage: Operations,RELEASEBUILDS
+    harness.io/ci-pipelineIds: featurebuildidpservice
+    harness.io/cd-serviceId-stage: idpservice
+    harness.io/ci-pipelineIds-stage: CutIDPServiceReleaseBranch,IDPServiceSaaSReleaseBuild
+    harness.io/project-url-stage: https://stage.harness.io/ng/account/wFHXHD0RRQWoO8tIZT5YVw/cd/orgs/Harness/projects/Operations/deployments
+    backstage.io/kubernetes-label-selector: app=idp-service
+    github.com/project-slug: harness/harness-core
+    harness.io/cd-serviceId: idp-service
+    pagerduty.com/service-id: PT5ED69
+    jira/project-key: IDP
+    harness.io/project-url: https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/ci/orgs/default/projects/IDP_UI/dashboard
+    backstage.io/techdocs-ref: url:https://github.com/harness/harness-core/tree/techdocs/idp-service
+    backstage.io/source-location: url:https://github.com/harness/harness-core/tree/develop/idp-service
+  links:
+  - title: GitHub Repo
+    url: https://github.com/harness/harness-core
+  - title: Slack channel
+    url: https://harness.slack.com/archives/C045CQ3PGAC
+  - title: Email
+    url: https://harness.atlassian.net/wiki/spaces/IDP/overview#:~:text=idp%2Dinternal%40harness.io
+  - title: New member onboarding docs
+    url: https://harness.atlassian.net/wiki/spaces/IDP/pages/21274821179/Onboarding+docs
+  - title: Debugging FAQs
+    url: https://harness.atlassian.net/wiki/spaces/IDP/pages/21456552616/Debugging+FAQs
+  - title: Troubleshooting guide
+    url: https://harness.atlassian.net/wiki/spaces/IDP/pages/21483946109/Troubleshooting+guide
+  - title: Zephyr testcases
+    url: https://harness.atlassian.net/projects/IDP?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10341
+  harnessData:
+    qa_version: '1.24'
+    prod_version: '1.23'
+  tags:
+  - java
