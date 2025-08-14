@@ -33,6 +33,9 @@ metadata:
       Build: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/home/orgs/default/projects/idptestharness/pipelines/cipipelinetest_sto/pipeline-studio/?storeType=INLINE
     harness.io/services: |
       cd: https://stress.harness.io/ng/account/px7xd_BFRCi-pfWPYXVjvw/cd/orgs/default/projects/idptestharness/services/testservice
+    harness.io/sto-test-target:
+    - name: vigneswara-propelo/Employee-Management-System
+      scope: HarnessHCRInternalUAT.Harness_Code
     backstage.io/source-location: url:https://github.com/harness/harness-core/tree/develop/idp-service
   links:
   - title: GitHub Repo
