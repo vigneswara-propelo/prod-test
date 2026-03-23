@@ -18,6 +18,7 @@ metadata:
   description: IDP backend service
   annotations:
     grafana/dashboard-selector: folderUrl == 'https://monitoring.harness.io/dashboards/f/k2ZV1BvIk/idp'
+    grafana/overview-dashboard: https://monitoring.harness.io/d/fcede249-b748-4d4a-ac5e-3425e8675b05/idp-service-http-resources?orgId=1
     harness.io/projects-stage: Operations,RELEASEBUILDS
     harness.io/ci-pipelineIds: featurebuildidpservice
     harness.io/cd-serviceId-stage: idpservice
