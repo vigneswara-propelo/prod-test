@@ -3,13 +3,13 @@ kind: Component
 type: service
 identifier: idp-service
 name: idp-service
-owner: group:idmbackend
+owner: group:account/idmbackend
 spec:
   lifecycle: production
   providesApi:
   - api:idp-service
   providesApis:
-  - idp-service
+  - component:account/idp-service
   dependsOn:
   - component:ng-manager
   dependencyOf:
@@ -17,6 +17,7 @@ spec:
 metadata:
   description: IDP backend service
   annotations:
+    grafana/dashboard-selector: folderUrl == 'https://monitoring.harness.io/dashboards/f/k2ZV1BvIk/idp'
     harness.io/projects-stage: Operations,RELEASEBUILDS
     harness.io/ci-pipelineIds: featurebuildidpservice
     harness.io/cd-serviceId-stage: idpservice
