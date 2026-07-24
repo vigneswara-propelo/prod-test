@@ -19,4 +19,10 @@ pipeline:
                   template:
                     templateRef: StepTemp
                     versionLabel: v1
+              - step:
+                  name: steTest2
+                  identifier: steTest2
+                  template:
+                    templateRef: StepTemp
+                    versionLabel: v1
         tags: {}
