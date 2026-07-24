@@ -1,0 +1,22 @@
+pipeline:
+  name: tets
+  identifier: tets
+  tags: {}
+  projectIdentifier: BofADemo
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: stage
+        identifier: stage
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: stepTest
+                  identifier: stepTest
+                  template:
+                    templateRef: StepTemp
+                    versionLabel: v1
+        tags: {}
