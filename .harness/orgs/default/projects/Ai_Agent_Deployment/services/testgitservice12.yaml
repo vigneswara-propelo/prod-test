@@ -1,0 +1,5 @@
+service:
+  name: testgitservice12
+  identifier: testgitservice12
+  orgIdentifier: default
+  projectIdentifier: Ai_Agent_Deployment
