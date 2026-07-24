@@ -1,0 +1,5 @@
+service:
+  name: testgitbasedsvc
+  identifier: testgitbasedsvc
+  orgIdentifier: IDP
+  projectIdentifier: Deepesh_CDE
