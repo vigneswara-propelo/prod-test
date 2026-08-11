@@ -1,0 +1,13 @@
+apiVersion: harness.io/v1
+kind: Group
+type: team
+identifier: IDP_Team_Kota
+name: IDP Team - Kota
+spec:
+  lifecycle: ''
+  leader: user:account/kota.karthik+1@harness.io
+  members:
+  - user:account/kota.karthik@harness.io
+metadata:
+  tags:
+  - java
